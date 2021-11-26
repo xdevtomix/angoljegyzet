@@ -13,7 +13,7 @@
     --night: black;
     --light-night: grey;
     --day: white;
-    --light-day: #eee;
+    --light-day: whitesmoke;
     --decor: magenta;
 }
 
@@ -39,7 +39,7 @@ html {
 
 body {
     width: 100%;
-    background-color: var(--day);
+    background-color: var(--light-day);
 }
 
 #root {

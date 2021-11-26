@@ -39,15 +39,35 @@ export default function TagQuestions() {
                 <span>1. "I’m" -es kezdés esetén állító mondatban:</span>
             </Row>
             <Row bold>
-                <span>I’m good, aren’t I? (NEM "amn’t I"!)</span>
+                <span>I’m good, aren’t I? <br /> (NEM "amn’t I"!)</span>
                 <span>Jó vagyok, ugye?</span>
             </Row>
             <Row>
                 <span>De:</span>
             </Row>
             <Row bold last>
-                <span>I'm not good, am I?	</span>
+                <span>I'm not good, am I?</span>
                 <span>Nem vagyok jó, ugye?</span>
+            </Row>
+
+            <Row>
+                <span>2. Saját magunk felszólítása esetén:</span>
+            </Row>
+            <Row bold last>
+                <span>Let’s (not) go there, shall we?</span>
+                <span>(Ne) menjünk oda, oké?</span>
+            </Row>
+
+            <Row>
+                <span>3. Mások felszólítása esetén:</span>
+            </Row>
+            <Row bold>
+                <span>Stop it, will you / (won’t you)?</span>
+                <span>Hagyd abba, oké?</span>
+            </Row>
+            <Row bold last>
+                <span>Don't stop it, will you?</span>
+                <span>Ne hagyd abba, oké?</span>
             </Row>
         </Container>
     );
