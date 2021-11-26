@@ -1,8 +1,15 @@
+import styled, { StyleSheetManager } from "styled-components";
 
 export default function App() {
   return (
-    <div>
-      sanyi
-    </div>
+    <StyleSheetManager disableVendorPrefixes>
+      <Container data-component="app">
+        sanyi
+      </Container>
+    </StyleSheetManager>
   )
 }
+
+const Container = styled.div`
+  width: 100%;
+`;
