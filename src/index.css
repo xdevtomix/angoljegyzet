@@ -9,10 +9,10 @@
 
 :root {
     --night: black;
-    --light-night: black;
-    --day: black;
-    --light-day: black;
-    --decor: black;
+    --light-night: grey;
+    --day: white;
+    --light-day: #eee;
+    --decor: magenta;
 }
 
 html {
@@ -37,7 +37,7 @@ html {
 
 body {
     width: 100%;
-    background-color: var(--night);
+    background-color: var(--day);
 }
 
 #root {

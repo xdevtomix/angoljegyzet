@@ -1,10 +1,12 @@
 import styled, { StyleSheetManager } from "styled-components";
 
+import TagQuestions from "./components/TagQuestions";
+
 export default function App() {
   return (
     <StyleSheetManager disableVendorPrefixes>
       <Container data-component="app">
-        sanyi
+        <TagQuestions />
       </Container>
     </StyleSheetManager>
   )
