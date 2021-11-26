@@ -18,11 +18,11 @@ export default function TagQuestions() {
 
             <SubTitle>A lényeg:</SubTitle>
 
-            <Row>
+            <Row bold>
                 <span>You are Hungarian, aren’t you?</span>
                 <span>Te magyar vagy, ugye?</span>
             </Row>
-            <Row last>
+            <Row bold last>
                 <span>The boys can't beat us, can they?</span>
                 <span>A fiúk nem tudnak megverni minket, ugye?</span>
             </Row>
@@ -35,17 +35,17 @@ export default function TagQuestions() {
             </Paragraph>
 
             <SubTitle>Megjegyzések:</SubTitle>
-            <Row solo>
+            <Row>
                 <span>1. "I’m" -es kezdés esetén állító mondatban:</span>
             </Row>
-            <Row>
+            <Row bold>
                 <span>I’m good, aren’t I? (NEM "amn’t I"!)</span>
                 <span>Jó vagyok, ugye?</span>
             </Row>
-            <Row solo>
+            <Row>
                 <span>De:</span>
             </Row>
-            <Row last>
+            <Row bold last>
                 <span>I'm not good, am I?	</span>
                 <span>Nem vagyok jó, ugye?</span>
             </Row>
