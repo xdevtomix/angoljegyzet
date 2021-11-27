@@ -127,11 +127,11 @@ export default function TagQuestions() {
             </Row>
             <Row bg>
                 <span>I don’t think Peter is rich, do I?</span>
-                <span>Nem hiszem, hogy Péter gazdag, ugye? (... vagy hiszem?)</span>
+                <span>Nem hiszem, hogy Péter gazdag, ugye?<br />(... vagy hiszem?)</span>
             </Row>
             <Row bg last>
                 <span>I don't think Peter is rich, is he?</span>
-                <span>Nem hiszem, hogy Péter gazdag, ugye? (... vagy gazdag?)</span>
+                <span>Nem hiszem, hogy Péter gazdag, ugye?<br />(... vagy gazdag?)</span>
             </Row>
 
             <Row>
@@ -171,22 +171,13 @@ export default function TagQuestions() {
                     10. "there be"-s mondatok:
                 </span>
             </Row>
-            <Row bg>
-                <span>I should go, shouldn’t I?</span>
-                <span>Mennem kéne, nem?</span>
-            </Row>
-            <Row bg>
-                <span>=</span>
-            </Row>
             <Row bg last>
                 <span>There is a cat under the table, isn’t there?</span>
                 <span>Van egy macska az asztal alatt, ugye?</span>
             </Row>
-            <Row>
-                <span>
-                    Ez az egy mondattípus az, amikor az "ugye" alanya nem személyes névmás, hanem a "there" szó.
-                </span>
-            </Row>
+            <Paragraph>
+                Ez az egy mondattípus az, amikor az "ugye" alanya nem személyes névmás, hanem a "there" szó.
+            </Paragraph>
         </Container>
     );
 }
