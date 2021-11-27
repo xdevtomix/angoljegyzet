@@ -3,6 +3,7 @@ import { Paragraph } from "../styled-components/Paragraph";
 import { Row } from "../styled-components/Row";
 import { SubTitle } from "../styled-components/SubTitle";
 import { Title } from "../styled-components/Title";
+import TheEnd from "../misc-components/TheEnd";
 
 export default function TagQuestions() {
     return (
@@ -178,6 +179,8 @@ export default function TagQuestions() {
             <Paragraph>
                 Ez az egy mondattípus az, amikor az "ugye" alanya nem személyes névmás, hanem a "there" szó.
             </Paragraph>
+
+            <TheEnd />
         </Container>
     );
 }

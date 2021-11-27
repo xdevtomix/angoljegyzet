@@ -3,6 +3,7 @@ import { Paragraph } from "../styled-components/Paragraph";
 import { Row } from "../styled-components/Row";
 import { SubTitle } from "../styled-components/SubTitle";
 import { Title } from "../styled-components/Title";
+import TheEnd from "../misc-components/TheEnd";
 
 export default function Causative() {
     return (
@@ -133,6 +134,8 @@ export default function Causative() {
                 A "szenvedő" műveltetésben tehát - ahol amúgy a "have" és a "get" egyenrangú - nem a cselekvő személye a lényeg,
                 hanem az elvégzett cselekvés maga.
             </Paragraph>
+
+            <TheEnd />
         </Container>
     );
 }
