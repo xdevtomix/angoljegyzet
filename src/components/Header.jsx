@@ -28,7 +28,7 @@ export default function Header() {
 
     return (
         <Container data-component="header">
-            <Logo href="#">
+            <Logo href="#home">
                 <span>Angol</span>jegyzet
             </Logo>
 
