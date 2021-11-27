@@ -10,12 +10,6 @@ import Causative from "./components/Causative";
 import 'swiper/css';
 
 export default function App() {
-  const onSlideChange = () => {
-    if (document.scrollingElement.scrollTop > innerHeight) {
-      document.scrollingElement.scrollTop = 0;
-    }
-  };
-
   return (
     <StyleSheetManager disableVendorPrefixes>
       <Container data-component="app">
@@ -26,7 +20,6 @@ export default function App() {
           <Swiper
             modules={[HashNavigation]}
             hashNavigation={{ watchState: true }}
-            onSlideChange={() => onSlideChange()}
           >
 
             <SwiperSlide data-hash="home">
