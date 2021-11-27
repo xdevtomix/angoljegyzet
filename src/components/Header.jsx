@@ -78,7 +78,7 @@ const Container = styled.header`
     }
 
     ion-icon {
-        color: var(--light-night);
+        color: var(--night);
         font-size: 2.5rem;
         cursor: pointer;
     }
@@ -87,7 +87,7 @@ const Container = styled.header`
 const Logo = styled.a`
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--light-night);
+    color: var(--night);
     text-decoration: none;
     letter-spacing: 0.1rem;
 
