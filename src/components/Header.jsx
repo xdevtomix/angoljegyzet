@@ -23,6 +23,7 @@ export default function Header() {
         <>
             <Link href="#home">Főoldal</Link>
             <Link href="#tag-questions">Ugye</Link>
+            <Link href="#causative">A műveltetés</Link>
         </>
     );
 
@@ -48,7 +49,8 @@ export default function Header() {
 const Container = styled.header`
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 4rem;
     z-index: 10;
     display: flex;
