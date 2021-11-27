@@ -6,6 +6,19 @@ export default function Header() {
 
     const [isSmallScreen, setIsSmallScreen] = useState(mediaQuery.matches);
     const [isVerticalMenuVisible, setIsVerticalMenuVisible] = useState(false);
+    const [isShadowVisible, setIsShadowVisible] = useState(false);
+
+    useEffect(() => {
+        function onWindowScroll() {
+            setIsShadowVisible(window.scrollY >= 64);
+        }
+
+        window.addEventListener('scroll', onWindowScroll)
+
+        return () => {
+            window.removeEventListener('scroll', onWindowScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const onMediaChange = (e) => {
@@ -28,7 +41,7 @@ export default function Header() {
     );
 
     return (
-        <Container data-component="header">
+        <Container data-component="header" isShadowVisible={isShadowVisible}>
             <Logo href="#home">
                 <span>Angol</span>jegyzet
             </Logo>
@@ -56,7 +69,8 @@ const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--night);
+    background-color: var(--day);
+    box-shadow: ${({isShadowVisible}) => isShadowVisible ? '0 0 1rem var(--light-night)' : ''};
     padding: 0 2rem;
 
     @media(min-width: 1024px) {
@@ -64,7 +78,7 @@ const Container = styled.header`
     }
 
     ion-icon {
-        color: var(--day);
+        color: var(--light-night);
         font-size: 2.5rem;
         cursor: pointer;
     }
@@ -73,7 +87,7 @@ const Container = styled.header`
 const Logo = styled.a`
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--day);
+    color: var(--light-night);
     text-decoration: none;
     letter-spacing: 0.1rem;
 
@@ -87,7 +101,8 @@ const VerticalMenu = styled.nav`
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: var(--night);
+    background-color: var(--day);
+    box-shadow: 0 0 0.125rem var(--light-night);
     padding: 2rem 0 0 2rem;
     display: flex;
     flex-direction: column;
@@ -100,7 +115,7 @@ const HorizontalMenu = styled.nav`
 `;
 
 const Link = styled.a`
-    color: var(--day);
+    color: var(--night);
     margin-bottom: 1rem;
     margin-right: 1rem;
     font-size: 1.5rem;
