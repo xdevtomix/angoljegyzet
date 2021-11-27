@@ -6,7 +6,7 @@ import { Title } from "../styled-components/Title";
 
 export default function TagQuestions() {
     return (
-        <Container data-component="tag-questions">
+        <Container data-component="tag-questions" id="tag-questions">
             <Title>3. Az "ugye" szerkezet</Title>
 
             <Paragraph>
