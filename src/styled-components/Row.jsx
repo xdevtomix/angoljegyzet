@@ -5,7 +5,7 @@ export const Row = styled.div`
     justify-content: space-between;
     margin-bottom: ${({last}) => last ? '1rem' : '0.5rem'};
     background-color: ${({bg}) => bg ? 'var(--light-day)' : 'var(--day)'};
-    padding: ${({decor}) => decor ? '0.5rem' : '0'};
+    padding: ${({bg}) => bg ? '0.5rem' : '0'};
     border-radius: 0.25rem;
 
     span {
