@@ -36,6 +36,7 @@ export default function Header() {
         <>
             <Link href="#home">Főoldal</Link>
             <Link href="#tag-questions">Ugye</Link>
+            <Link href="#passive">Szenvedő</Link>
             <Link href="#causative">A műveltetés</Link>
         </>
     );

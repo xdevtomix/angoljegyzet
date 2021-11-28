@@ -2,19 +2,18 @@ import styled from "styled-components";
 
 export default function TheEnd() {
     return (
-        <Title>
+        <Container>
             <div></div>
             <h2>Vége</h2>
             <div></div>
-        </Title>
+        </Container>
     );
 }
 
-const Title = styled.div`   
+const Container = styled.div`   
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;
 
     div {
         width: 25%;

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import TagQuestions from "./components/TagQuestions";
+import Passive from "./components/Passive";
 import Causative from "./components/Causative";
 
 import 'swiper/css';
@@ -27,6 +28,9 @@ export default function App() {
             </SwiperSlide>
             <SwiperSlide data-hash="tag-questions">
               <TagQuestions />
+            </SwiperSlide>
+            <SwiperSlide data-hash="passive">
+              <Passive />
             </SwiperSlide>
             <SwiperSlide data-hash="causative">
               <Causative />
